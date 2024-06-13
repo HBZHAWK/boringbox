@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: g j, j, LIC=585FJ-UM34U-740S0-BF2SP-HHEE5-QW8TQ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\HBZ\Desktop\无聊的盒子\源码 - 副本\project.uvprojx
+Project File Date:  05/24/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dma.c...
+compiling core_cm3.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_crc.c...
+compiling misc.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_spi.c...
+compiling PWM.c...
+compiling Delay.c...
+compiling stm32f10x_usart.c...
+compiling Key.c...
+Hardware\Key.c(33): warning:  #223-D: function "LED_RGB" declared implicitly
+      LED_RGB(ledState.red, ledState.green, ledState.blue); // 鏇存柊LED棰滆壊
+Hardware\Key.c(342): warning:  #223-D: function "LED_RGB" declared implicitly
+              LED_RGB(ledState.red, ledState.green, ledState.blue);
+Hardware\Key.c: 2 warnings, 0 errors
+compiling stm32f10x_tim.c...
+compiling Box_action.c...
+Hardware\Box_action.c(139): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  	setLEDStartColor(255,0,0);
+Hardware\Box_action.c(271): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 0:{lala();setLEDStartColor(225,0,0);break;}
+Hardware\Box_action.c(272): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 1:{haha();setLEDStartColor(0,225,0);break;}
+Hardware\Box_action.c(273): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 2:{wawa();setLEDStartColor(225,225,0);break;}
+Hardware\Box_action.c(274): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 3:{dodo();setLEDStartColor(0,225,225);break;}
+Hardware\Box_action.c(275): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 4:{blala();setLEDStartColor(255,182,193);break;}
+Hardware\Box_action.c(276): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 5:{gaga();setLEDStartColor(230,190,255);break;}
+Hardware\Box_action.c(277): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 6:{ouou();setLEDStartColor(135,206,250);break;}
+Hardware\Box_action.c(278): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 7:{aaaa();setLEDStartColor(189,252,201);break;}
+Hardware\Box_action.c(279): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 8:{wowo();setLEDStartColor(128,128,128);break;}
+Hardware\Box_action.c(280): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 9:{lanlan();setLEDStartColor(255,165,0);break;}
+Hardware\Box_action.c(290): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 0:{trytry();setLEDStartColor(127,0,225);break;}
+Hardware\Box_action.c(291): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 1:{heihei();setLEDStartColor(53,165,127);break;}
+Hardware\Box_action.c(292): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 2:{weiwei();setLEDStartColor(235,0,225);break;}
+Hardware\Box_action.c(293): warning:  #223-D: function "setLEDStartColor" declared implicitly
+  			case 3:{tuitui();setLEDStartColor(43,78,127);break;}
+Hardware\Box_action.c: 15 warnings, 0 errors
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling led.c...
+Hardware\led.c(68): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\led.c: 1 warning, 0 errors
+linking...
+Program Size: Code=5032 RO-data=504 RW-data=144 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\project.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil::STM32F1xx_DFP@2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Keil_v5/Keil/STM32F1xx_DFP/2.3.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
