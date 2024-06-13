@@ -8,16 +8,16 @@ int helloen=0;
 int judge=0;
 
 const int colors[7][3] = {
-    {255, 0, 0},    // ºì
-    {255, 165, 0},  // ³È
-    {255, 255, 0},  // »Æ
-    {0, 255, 0},    // ÂÌ
-    {0, 255, 255},  // Çà
-    {0, 0, 255},    // À¶
-    {128, 0, 128}   // ×Ï
+    {255, 0, 0},    // çº¢
+    {255, 165, 0},  // æ©™
+    {255, 255, 0},  // é»„
+    {0, 255, 0},    // ç»¿
+    {0, 255, 255},  // é’
+    {0, 0, 255},    // è“
+    {128, 0, 128}   // ç´«
 };
 
-// Ä¦¶ûË¹µçÂë±í
+// æ‘©å°”æ–¯ç”µç è¡¨
 const char *morse_code[] = {
     ".-",    // A
     "-...",  // B
@@ -65,7 +65,7 @@ void display_morse_code(const char *message) {
         if (c >= 'A' && c <= 'Z') {
             code = morse_code[c - 'A'];
         } else {
-            continue;  // ºöÂÔ·Ç×ÖÄ¸×Ö·û
+            continue;  // å¿½ç•¥éžå­—æ¯å­—ç¬¦
         }
 
         for (int j = 0; code[j] != '\0'; j++) {
@@ -75,21 +75,21 @@ void display_morse_code(const char *message) {
             setColor(r, g, b);
 
             if (code[j] == '.') {
-                Delay_ms(20);  // µãµÄ³ÖÐøÊ±¼äÎª200ms
+                Delay_ms(20);  // ç‚¹çš„æŒç»­æ—¶é—´ä¸º200ms
             } else if (code[j] == '-') {
-                Delay_ms(40);  // »®µÄ³ÖÐøÊ±¼äÎª400ms
+                Delay_ms(40);  // åˆ’çš„æŒç»­æ—¶é—´ä¸º400ms
             }
 
-            setColor(0, 0, 0);  // µãºÍ»®Ö®¼äµÄ¼ä¸ôÓÃµÆÃð±íÊ¾
-            Delay_ms(20);  // µãºÍ»®Ö®¼äµÄ¼ä¸ôÊ±¼äÎª200ms
+            setColor(0, 0, 0);  // ç‚¹å’Œåˆ’ä¹‹é—´çš„é—´éš”ç”¨ç¯ç­è¡¨ç¤º
+            Delay_ms(20);  // ç‚¹å’Œåˆ’ä¹‹é—´çš„é—´éš”æ—¶é—´ä¸º200ms
             color_index++;
         }
 
-        setColor(0, 0, 0);  // ×ÖÄ¸¼ä¼ä¸ôÓÃµÆÃð±íÊ¾
-        Delay_ms(60);  // ×ÖÄ¸¼ä¼ä¸ôÊ±¼äÎª600ms
+        setColor(0, 0, 0);  // å­—æ¯é—´é—´éš”ç”¨ç¯ç­è¡¨ç¤º
+        Delay_ms(60);  // å­—æ¯é—´é—´éš”æ—¶é—´ä¸º600ms
     }
 
-    setColor(0, 0, 0);  // ½áÊøºóµÆÃð
+    setColor(0, 0, 0);  // ç»“æŸåŽç¯ç­
 }
 
 int main()
@@ -112,34 +112,6 @@ int main()
 
 	while(1)
 	{	
-//		LED_RGB(255,0,0);
-//		Delay_s(1);
-//		LED_RGB(0,255,0);
-//		Delay_s(1);
-//		LED_RGB(0,0,255);
-//		Delay_s(1);
-			
-//		Delay_s(1);
-//		LED_RGB(225,225,255);
-//		Delay_s(1);
-//		action(1);
-
-
-
-
-//			TIM_SetCompare1(TIM4, 500);
-//			TIM_SetCompare2(TIM4, 500);
-//			Delay_ms(1500);
-//			TIM_SetCompare1(TIM4, 1500);
-//			TIM_SetCompare2(TIM4, 1500);
-//			Delay_ms(1500);
-//			TIM_SetCompare1(TIM4, 2500);
-//			TIM_SetCompare2(TIM4, 2500);
-//			Delay_ms(1500);
-
-
-
-
 			if(Key_KeyNumber==1) 
 				{
 					helloen=0;
@@ -160,14 +132,7 @@ int main()
 
 					
 				
-//				if(Key_KeyNumber==1) {
-//				
-//				LED_RGB(225,225,255);
-//				
-//				}else{
-//				LED_RGB(0,0,0);
-//				
-//				}
+
 					
 
 	}
